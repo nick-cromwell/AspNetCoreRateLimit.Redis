@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp3.1;netstandard2.0;net5.0;</TargetFrameworks>
+    <Description>StackExchange Redis support for ASP.NET Core rate limiting middleware</Description>
+    <AssemblyName>AspNetCoreRateLimitRedis</AssemblyName>
+    <PackageId>AspNetCoreRateLimitRedis</PackageId>
+    <PackageTags>aspnetcore;rate-limit;throttle;redis</PackageTags>
+    <PackageProjectUrl>https://github.com/stefanprodan/AspNetCoreRateLimit.Redis</PackageProjectUrl>
+    <PackageLicense>http://opensource.org/licenses/MIT</PackageLicense>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/stefanprodan/AspNetCoreRateLimit.Redis</RepositoryUrl>
+    <LangVersion>8</LangVersion>
+    <!-- <SignAssembly>true</SignAssembly> -->
+    <!-- <AssemblyOriginatorKeyFile>../../sgKey.snk</AssemblyOriginatorKeyFile> -->
+    <DelaySign>false</DelaySign>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="2.2.4" />
+    <PackageReference Include="AspNetCoreRateLimit" Version="4.0.0" />
+  </ItemGroup>
+</Project>
